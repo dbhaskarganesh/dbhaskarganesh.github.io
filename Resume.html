@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume - Bhaskar Ganesh</title>
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-white text-gray-800">
@@ -16,7 +17,7 @@
           <a href="projects.html" class="hover:underline">Projects</a>
           <a href="publications.html" class="hover:underline">Publications</a>
           <a href="certifications.html" class="hover:underline">Certifications</a>
-          <a href="Resume.html" class="underline font-semibold">Resume</a>
+          <a href="resume.html" class="underline font-semibold">Resume</a>
           <a href="contact.html" class="hover:underline">Contact</a>
         </nav>
       </div>
@@ -25,13 +26,30 @@
     <!-- Main Content -->
     <main class="pt-32 max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-bold mb-6">My Resume</h2>
-      <div class="w-full h-[80vh] border shadow-lg">
+
+      <!-- PDF Viewer -->
+      <div class="w-full h-[80vh] border border-gray-300 shadow-lg rounded">
         <iframe
-          src="https://drive.google.com/file/d/1Vpsj75QpTDVN5cO3X9xQ4pTSz8o98Wnt/view?usp=sharing"
+          src="Devalla_Bhaskar_Ganesh_Resume.pdf"  <!-- Correct PDF file name -->
           class="w-full h-full"
-          allow="autoplay"
+          type="application/pdf"
           frameborder="0"
-        ></iframe>
+          aria-label="Bhaskar Ganesh's resume"
+        >
+          Your browser does not support embedded PDFs. 
+          <a href="Devalla_Bhaskar_Ganesh_Resume.pdf" class="text-blue-600 hover:underline">Download the PDF</a> to view it.
+        </iframe>
+      </div>
+
+      <!-- Download Button -->
+      <div class="text-center mt-6">
+        <a
+          href="Devalla_Bhaskar_Ganesh_Resume.pdf"
+          download
+          class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition duration-200"
+        >
+          Download Resume (PDF)
+        </a>
       </div>
     </main>
 
