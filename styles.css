@@ -75,6 +75,9 @@ a:hover{ text-decoration: underline; }
 #lang-en:checked ~ .page .switch-en,
 #lang-zh:checked ~ .page .switch-zh{ background:#0a0f1e; color:#fff; box-shadow: var(--shadow); }
 
+/* ---------- Utility: superscript '2' for NLP²CT ---------- */
+.sup2{ font-size:.7em; vertical-align:super; line-height:0; }
+
 /* ----------------- Content ----------------- */
 main{
   background: linear-gradient(180deg,#0c1324 0%, #0b1020 60%);
