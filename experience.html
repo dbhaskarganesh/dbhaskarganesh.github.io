@@ -6,6 +6,42 @@
   <title>Bhaskar Ganesh Devalla — Experience</title>
   <link rel="stylesheet" href="styles.css">
   <meta name="description" content="Portfolio of Bhaskar Ganesh Devalla — NLP, Speech, and AI">
+
+  <!-- Page-specific CSS to ensure footer/flag are centered on this page -->
+  <style>
+    /* Ensure footer content is centered for this page */
+    footer {
+      text-align: center !important;
+      padding: 20px 0;
+      display: block;
+      clear: both;
+    }
+
+    footer > div:first-child {
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    footer .flag {
+      margin: 0 auto;
+      display: inline-block;
+    }
+
+    footer .flag a,
+    footer .flag img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Small responsive tweak so the flag doesn't overflow narrow screens */
+    @media (max-width: 420px) {
+      footer .flag img {
+        transform: scale(0.9);
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Language Radios -->
@@ -53,81 +89,82 @@
       </aside>
 
       <main>
-  <!-- EN -->
-  <section class="lang-en">
-    <h1>Experience</h1>
-    <div class="timeline">
-      <div class="item">
-        <h3>
-          Teaching Assistant · University of Macau
-          <span style="color:#94a3b8;">(Sep 2025 – Present)</span>
-        </h3>
-        <ul>
-          <li>Support undergraduate students by conducting weekly tutorials and clarifying conceptual doubts in discrete mathematics.</li>
-          <li>Grade assignments, quizzes, and exams, providing constructive feedback to enhance student understanding.</li>
-          <li>Collaborate with course instructor to improve learning materials and streamline assessment workflows.</li>
-        </ul>
-        <p><em>Course: CISC1002 - Discrete Structures</em></p>
-      </div>
+        <!-- EN -->
+        <section class="lang-en">
+          <h1>Experience</h1>
+          <div class="timeline">
+            <div class="item">
+              <h3>
+                Teaching Assistant · University of Macau
+                <span style="color:#94a3b8;">(Sep 2025 – Present)</span>
+              </h3>
+              <ul>
+                <li>Support undergraduate students by conducting weekly tutorials and clarifying conceptual doubts in discrete mathematics.</li>
+                <li>Grade assignments, quizzes, and exams, providing constructive feedback to enhance student understanding.</li>
+                <li>Collaborate with course instructor to improve learning materials and streamline assessment workflows.</li>
+              </ul>
+              <p><em>Course: CISC1002 - Discrete Structures</em></p>
+            </div>
 
-      <div class="item">
-        <h3>
-          Research Assistant — NLP<span class="sup2">2</span>CT Lab · University of Macau
-          <span style="color:#94a3b8;">(Mar 2024 – Present)</span>
-        </h3>
-        <ul>
-          <li>Engineered advanced LLM solutions, enhancing <em>NLP task accuracy</em> by <strong>15%</strong> in multilingual translation tasks.</li>
-          <li>Developed a scalable LLM optimization framework, boosting <em>task efficiency</em> by <strong>20%</strong> and accelerating <em>research workflows</em> by <strong>30%</strong>.</li>
-          <li>Conducted cross-lingual LLM benchmarking, achieving <strong>12% higher performance</strong> in low-resource language pairs.</li>
-        </ul>
-      </div>
+            <div class="item">
+              <h3>
+                Research Assistant — NLP<span class="sup2">2</span>CT Lab · University of Macau
+                <span style="color:#94a3b8;">(Mar 2024 – Present)</span>
+              </h3>
+              <ul>
+                <li>Engineered advanced LLM solutions, enhancing <em>NLP task accuracy</em> by <strong>15%</strong> in multilingual translation tasks.</li>
+                <li>Developed a scalable LLM optimization framework, boosting <em>task efficiency</em> by <strong>20%</strong> and accelerating <em>research workflows</em> by <strong>30%</strong>.</li>
+                <li>Conducted cross-lingual LLM benchmarking, achieving <strong>12% higher performance</strong> in low-resource language pairs.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 中文 -->
+        <section class="lang-zh">
+          <h1>经历</h1>
+          <div class="timeline">
+            <div class="item">
+              <h3>
+                助教 · 澳门大学
+                <span style="color:#94a3b8;">（2025年9月 – 至今）</span>
+              </h3>
+              <ul>
+                <li>通过每周辅导课帮助本科生解决离散数学中的概念性疑难问题。</li>
+                <li>批改作业、小测与考试，并提供建设性反馈以提升学生理解力。</li>
+                <li>与授课教师协作优化教学材料，简化评估流程。</li>
+              </ul>
+              <p><em>课程：CISC1002《离散结构》</em></p>
+            </div>
+
+            <div class="item">
+              <h3>
+                研究助理 — NLP<span class="sup2">2</span>CT 实验室 · 澳门大学
+                <span style="color:#94a3b8;">（2024年3月 – 至今）</span>
+              </h3>
+              <ul>
+                <li>研发先进的 LLM 方案，使 <em>多语言翻译任务准确率</em> 提升 <strong>15%</strong>。</li>
+                <li>开发可扩展 LLM 优化框架，将 <em>任务效率</em> 提升 <strong>20%</strong>，并加快 <em>研究流程</em> <strong>30%</strong>。</li>
+                <li>开展跨语言 LLM 基准测试，在低资源语言对上实现 <strong>12% 更高性能</strong>。</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
     </div>
-  </section>
 
-  <!-- 中文 -->
-  <section class="lang-zh">
-    <h1>经历</h1>
-    <div class="timeline">
-      <div class="item">
-        <h3>
-          助教 · 澳门大学
-          <span style="color:#94a3b8;">（2025年9月 – 至今）</span>
-        </h3>
-        <ul>
-          <li>通过每周辅导课帮助本科生解决离散数学中的概念性疑难问题。</li>
-          <li>批改作业、小测与考试，并提供建设性反馈以提升学生理解力。</li>
-          <li>与授课教师协作优化教学材料，简化评估流程。</li>
-        </ul>
-        <p><em>课程：CISC1002《离散结构》</em></p>
-      </div>
-
-      <div class="item">
-        <h3>
-          研究助理 — NLP<span class="sup2">2</span>CT 实验室 · 澳门大学
-          <span style="color:#94a3b8;">（2024年3月 – 至今）</span>
-        </h3>
-        <ul>
-          <li>研发先进的 LLM 方案，使 <em>多语言翻译任务准确率</em> 提升 <strong>15%</strong>。</li>
-          <li>开发可扩展 LLM 优化框架，将 <em>任务效率</em> 提升 <strong>20%</strong>，并加快 <em>研究流程</em> <strong>30%</strong>。</li>
-          <li>开展跨语言 LLM 基准测试，在低资源语言对上实现 <strong>12% 更高性能</strong>。</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</main>
-
-</div>
     <footer>
-      <div>© 2025 Bhaskar Ganesh Devalla • Built with semantic HTML & CSS</div>
-      
-<div class="flag">
-<a href="https://info.flagcounter.com/Zu6A">
-  <img src="https://s01.flagcounter.com/count2/Zu6A/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_15/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
-</a>
-</div>
+      <div>© 2025 Bhaskar Ganesh Devalla • Built with semantic HTML &amp; CSS</div>
 
+      <div class="flag">
+        <a href="https://info.flagcounter.com/Zu6A" target="_blank" rel="noopener">
+          <img src="https://s01.flagcounter.com/count2/Zu6A/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_15/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" 
+               alt="Flag Counter" border="0">
+        </a>
+      </div>
     </footer>
+
   </div>
 </body>
 </html>
-     
