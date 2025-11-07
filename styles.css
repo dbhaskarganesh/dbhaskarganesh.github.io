@@ -55,20 +55,20 @@ a:hover{ text-decoration: underline; }
 .side-links a{ display:block; padding:.45rem .6rem; border-radius:10px; color:var(--ink); border:1px solid transparent; }
 .side-links a:hover{ background:#0b1221; border-color:#162033; text-decoration:none; }
 
-/* ----------------- CV DROPDOWN (HOVER-BASED DESKTOP STYLE) ----------------- */
+/* ----------------- CV DROPDOWN (DESKTOP STABLE VERSION) ----------------- */
 .cv-dropdown {
   position: relative;
   display: inline-block;
   width: 100%;
   text-align: center;
-  margin-top: 0.7rem;
+  margin-top: 0.8rem;
 }
 
 .cv-button {
-  background: linear-gradient(135deg,#60a5fa,#a78bfa);
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
   color: #0b1020;
   font-weight: 800;
-  padding: .55rem .9rem;
+  padding: 0.55rem 0.9rem;
   border-radius: 999px;
   box-shadow: var(--shadow);
   border: none;
@@ -83,19 +83,22 @@ a:hover{ text-decoration: underline; }
   opacity: 0.9;
 }
 
-/* dropdown menu */
+/* Dropdown content */
 .cv-dropdown-content {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
   position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #0b1221;
   border: 1px solid #162033;
   border-radius: 10px;
-  min-width: 180px;
+  min-width: 200px;
   box-shadow: var(--shadow);
-  z-index: 100;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 8px;
+  z-index: 9999;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .cv-dropdown-content a {
@@ -113,9 +116,12 @@ a:hover{ text-decoration: underline; }
   color: #fff;
 }
 
-/* show on hover */
+/* Show dropdown smoothly on hover */
 .cv-dropdown:hover .cv-dropdown-content {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
 }
 
 /* Top nav */
