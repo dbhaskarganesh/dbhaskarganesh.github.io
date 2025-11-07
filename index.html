@@ -46,24 +46,12 @@
 
 
 <div class="cv-dropdown">
-  <button class="cv-button" id="cvToggle">📄 View CV ▾</button>
-  <div class="cv-dropdown-content" id="cvMenu">
+  <button class="cv-button">📄 View CV ▾</button>
+  <div class="cv-dropdown-content">
     <a href="./Devalla_Bhaskar_Ganesh_Resume.pdf" target="_blank" rel="noopener">English CV</a>
     <a href="./Devalla_Bhaskar_Ganesh_Resume_Chinese.pdf" target="_blank" rel="noopener">中文简历 (Chinese CV)</a>
   </div>
 </div>
-
-<script>
-document.addEventListener("click", e => {
-  const btn = document.getElementById("cvToggle");
-  const menu = document.getElementById("cvMenu");
-  if (btn.contains(e.target)) {
-    menu.classList.toggle("show");
-  } else {
-    menu.classList.remove("show");
-  }
-});
-</script>
 
 
       <main>
