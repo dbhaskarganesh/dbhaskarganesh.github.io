@@ -68,13 +68,11 @@ a:hover{ text-decoration: underline; }
 /* ---- CV Buttons (English / Chinese) ---- */
 .cv-buttons {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 0.6rem;
   margin-top: 0.8rem;
-}
-.cv-btn {
-  flex: 1; /* makes both buttons same width */
+  flex-wrap: nowrap;
 }
 
 .cv-btn {
@@ -87,13 +85,18 @@ a:hover{ text-decoration: underline; }
   border-radius: 999px;
   box-shadow: var(--shadow);
   text-decoration: none;
-  transition: all 0.25s ease;   /* ✅ fixed here */
+  transition: all 0.25s ease;
+  white-space: nowrap;          /* prevent text wrap */
+  min-width: 110px;             /* equal button widths */
+  font-size: 0.9rem;
 }
 
 .cv-btn:hover {
   transform: translateY(-2px);
   opacity: 0.9;
 }
+
+
 
 /* Top nav */
 .topnav{ display:flex; align-items:center; gap:.6rem; justify-content:space-between; padding: .8rem 0; }
