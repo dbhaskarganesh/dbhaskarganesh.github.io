@@ -55,9 +55,40 @@ a:hover{ text-decoration: underline; }
 .side-links a{ display:block; padding:.45rem .6rem; border-radius:10px; color:var(--ink); border:1px solid transparent; }
 .side-links a:hover{ background:#0b1221; border-color:#162033; text-decoration:none; }
 .side-cta{
-  display:inline-block; margin-top: .6rem;
-  background:linear-gradient(135deg,#60a5fa,#a78bfa); color:#0b1020; font-weight:800;
-  padding:.55rem .9rem; border-radius:999px; box-shadow: var(--shadow);
+  display:inline-block;
+  margin-top: .6rem;
+  background:linear-gradient(135deg,#60a5fa,#a78bfa);
+  color:#0b1020;
+  font-weight:800;
+  padding:.55rem .9rem;
+  border-radius:999px;
+  box-shadow: var(--shadow);
+}
+
+/* ---- CV Buttons (English / Chinese) ---- */
+.cv-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.cv-btn {
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  color: #0b1020;
+  font-weight: 800;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  transition: all 0.25s ease;   /* ✅ fixed here */
+}
+
+.cv-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
 /* Top nav */
