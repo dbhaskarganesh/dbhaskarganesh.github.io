@@ -54,10 +54,66 @@ a:hover{ text-decoration: underline; }
 .sidebar .meta{ margin:.6rem 0 1rem; color:var(--sub); font-size:.95rem; }
 .side-links a{ display:block; padding:.45rem .6rem; border-radius:10px; color:var(--ink); border:1px solid transparent; }
 .side-links a:hover{ background:#0b1221; border-color:#162033; text-decoration:none; }
-.side-cta{
-  display:inline-block; margin-top: .6rem;
-  background:linear-gradient(135deg,#60a5fa,#a78bfa); color:#0b1020; font-weight:800;
-  padding:.55rem .9rem; border-radius:999px; box-shadow: var(--shadow);
+
+/* ----------------- CV DROPDOWN BUTTON ----------------- */
+.cv-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.cv-button {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  color: #0b1020;
+  font-weight: 800;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.cv-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.cv-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0b1221;
+  border: 1px solid #162033;
+  border-radius: 12px;
+  min-width: 180px;
+  box-shadow: var(--shadow);
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.cv-dropdown-content a {
+  color: #e5e7eb;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.cv-dropdown-content a:hover {
+  background: #101a31;
+  color: #fff;
+}
+
+.cv-dropdown:hover .cv-dropdown-content {
+  display: block;
 }
 
 /* Top nav */
