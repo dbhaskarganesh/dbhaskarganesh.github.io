@@ -55,20 +55,20 @@ a:hover{ text-decoration: underline; }
 .side-links a{ display:block; padding:.45rem .6rem; border-radius:10px; color:var(--ink); border:1px solid transparent; }
 .side-links a:hover{ background:#0b1221; border-color:#162033; text-decoration:none; }
 
-/* ----------------- CV DROPDOWN (CLICK-TO-OPEN) ----------------- */
+/* ----------------- CV DROPDOWN (HOVER-BASED DESKTOP STYLE) ----------------- */
 .cv-dropdown {
   position: relative;
-  display: block;
+  display: inline-block;
   width: 100%;
   text-align: center;
-  margin-top: 0.8rem;
+  margin-top: 0.7rem;
 }
 
 .cv-button {
-  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  background: linear-gradient(135deg,#60a5fa,#a78bfa);
   color: #0b1020;
   font-weight: 800;
-  padding: 0.55rem 0.9rem;
+  padding: .55rem .9rem;
   border-radius: 999px;
   box-shadow: var(--shadow);
   border: none;
@@ -78,35 +78,33 @@ a:hover{ text-decoration: underline; }
   transition: all 0.25s ease;
 }
 
-.cv-button:hover,
-.cv-button:focus {
+.cv-button:hover {
   transform: translateY(-1px);
-  opacity: 0.92;
-  outline: none;
+  opacity: 0.9;
 }
 
+/* dropdown menu */
 .cv-dropdown-content {
+  display: none;
   position: absolute;
+  background-color: #0b1221;
+  border: 1px solid #162033;
+  border-radius: 10px;
+  min-width: 180px;
+  box-shadow: var(--shadow);
+  z-index: 100;
   left: 50%;
   transform: translateX(-50%);
-  background: #0b1221;
-  border: 1px solid #162033;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  min-width: 200px;
-  z-index: 100;
-  display: none;
-  flex-direction: column;
-  overflow: hidden;
-  margin-top: 0.5rem;
+  margin-top: 8px;
 }
 
 .cv-dropdown-content a {
-  display: block;
   color: #e5e7eb;
   padding: 10px 14px;
   text-decoration: none;
+  display: block;
   font-weight: 600;
+  border-radius: 10px;
   transition: background 0.2s ease;
 }
 
@@ -115,18 +113,12 @@ a:hover{ text-decoration: underline; }
   color: #fff;
 }
 
-.cv-dropdown-content.show {
-  display: flex;
-  animation: fadeIn 0.2s ease;
+/* show on hover */
+.cv-dropdown:hover .cv-dropdown-content {
+  display: block;
 }
 
-/* Fade effect */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateX(-50%) translateY(-5px); }
-  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
-}
-
-/* ----------------- Top nav ----------------- */
+/* Top nav */
 .topnav{ display:flex; align-items:center; gap:.6rem; justify-content:space-between; padding: .8rem 0; }
 .topnav .links{ display:flex; gap:.4rem; flex-wrap:wrap; }
 .topnav .links a{ padding:.45rem .7rem; border-radius:999px; color:#cbd5e1; border:1px solid #1f2937; }
@@ -163,7 +155,7 @@ h2{ font-size:1.2rem; letter-spacing:.3px; margin:1.6rem 0 .8rem; border-left: 4
 .col-12{ grid-column: span 12; } .col-8{ grid-column: span 8; } .col-6{ grid-column: span 6; } .col-4{ grid-column: span 4; }
 @media (max-width: 980px){ .col-8,.col-6,.col-4{ grid-column: span 12; } }
 
-/* ----------------- Experience Cards ----------------- */
+/* Experience – clean cards (used on experience.html) */
 .timeline { display:flex; flex-direction:column; gap:1.25rem; margin-top:.75rem; }
 .timeline::before { content:none !important; }
 .item::before { content:none !important; }
@@ -178,18 +170,18 @@ h2{ font-size:1.2rem; letter-spacing:.3px; margin:1.6rem 0 .8rem; border-left: 4
 .exp-bullets{ margin:0; padding-left:1.2rem; }
 .exp-bullets li{ margin:.28rem 0; color:#d1d5db; }
 
-/* ----------------- Generic lists ----------------- */
+/* Generic lists */
 ul{ margin:.4rem 0 .8rem .8rem; }
 li{ margin:.25rem 0; }
 
-/* ----------------- APA citation styling ----------------- */
+/* ===== APA citation styling ===== */
 .apa-list { list-style: decimal; padding-left: 1.4rem; margin: .4rem 0 1rem; }
 .apa-list li { margin: .5rem 0; }
 .apa-item { display: block; text-indent: -1.4rem; padding-left: 1.4rem; }
 .apa-title { font-weight: 700; }
 .apa-list a { word-break: break-all; }
 
-/* ----------------- Footer ----------------- */
+/* Footer */
 footer{ color:#94a3b8; padding:1.6rem 0 3rem; text-align:center; }
 footer .flag{ margin-top: .8rem; opacity:.95; }
 footer a{ text-decoration: underline; }
